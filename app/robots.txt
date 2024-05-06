@@ -3,4 +3,4 @@ Allow: /
 Disallow: /private/
 Disallow: /dashboard
 
-Sitemap: https://nextjs-typescript-eta.vercel.app/sitemap.xml
+Sitemap: https://ecommerce-mini03-8ecj1pc31-sokcheats-projects.vercel.app/sitemap.xml
