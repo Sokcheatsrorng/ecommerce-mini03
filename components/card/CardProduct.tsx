@@ -8,7 +8,7 @@ import { toNamespacedPath } from "node:path/win32";
 
 export default function CardProduct({
 	id,
-	name,
+	title,
 	image,
 	price,
 	onClick,

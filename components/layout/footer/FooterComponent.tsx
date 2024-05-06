@@ -15,8 +15,8 @@ export function FooterComponent() {
             name="Flowbite"
           />
           <Footer.LinkGroup className="mt-4 sm:mt-0 text-blue-900 ">
-            {MenuList.map((item) => (
-              <Footer.Link href={item.path}>{item.name}</Footer.Link>
+            {MenuList.map((item,index) => (
+              <Footer.Link key={index} href={item.path}>{item.name}</Footer.Link>
             ))}
           </Footer.LinkGroup>
         </div>
