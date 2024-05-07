@@ -6,7 +6,7 @@ function HeroSectionComponent() {
   return (
     <section className='hero-section bg-gradient-to-tr from-blue-200 to-orange-100 text-start h-[600px] overflow-hidden p-2 md:p-8 md:h-[900px] lg:h-[600px] md:w-full lg:w-[80%] mx-auto'>
       <div className="container mx-auto px-4 md:p-0 py-16 md:py-10 flex flex-col lg:flex-row items-center justify-center">
-        <div className="md:w-full md:py-6 lg:w-1/2 lg:mb-0" data-aos="fade-right">
+        <div className="md:w-full md:py-6 lg:w-1/2 lg:mb-0" data-aos="fade-right" >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-2 mb-4 text-blue-900">
             Welcome To COZZY SHOP
           </h1>

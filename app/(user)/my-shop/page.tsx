@@ -1,9 +1,10 @@
 "use client"
 import DataTable, {TableColumn} from "react-data-table-component"
 import {ProductType} from "@/lib/definitions";
-import {useGetProductsQuery} from "@/redux/service/product";
+import {useDeleteProductMutation, useGetProductsQuery} from "@/redux/service/product";
 import React, {useEffect, useState} from "react";
 import {useRouter} from "next/navigation";
+import { access } from "fs";
 
 export default function ProductTable() {
     const [products, setProducts] = useState<ProductType[]>([]);
@@ -61,8 +62,8 @@ export default function ProductTable() {
                 return (
                     <div className="flex justify-center items-center gap-2">
                         <span className="text-yellow-500 cursor-pointer" onClick={()=> router.push(`/product/${row.id}`)}>View</span>
-                        <span className="text-blue-500 cursor-pointer">Edit</span>
-                        <span className="text-red-500 cursor-pointer">Delete</span>
+                        <span className="text-blue-500 cursor-pointer" onClick={()=>router.push(`/myshop/create/${row.id}`)}>Edit</span>
+                        <span className="text-red-500 cursor-pointer" onClick={()=>{useDeleteProductMutation}}>Delete</span>
                     </div>
                 );
             }
